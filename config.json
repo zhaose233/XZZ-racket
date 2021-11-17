@@ -1,0 +1,7 @@
+{
+    "send-ip": "127.0.0.1",
+    "send-port": 5700,
+    "listen-ip": "127.0.0.1",
+    "listen-port": 5701,
+    "reg": "maid( )?"
+}
