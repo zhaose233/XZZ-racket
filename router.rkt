@@ -4,12 +4,14 @@
 (require "plugins/not-found.rkt")
 (require "plugins/help.rkt")
 (require "plugins/echo.rkt")
+(require "plugins/five.rkt")
 
 (define command-list
   (list
    (cons #rx"^hello"    hello)
    (cons #rx"^help"     help)
-   (cons #rx"^echo( )?" echo)))
+   (cons #rx"^echo( )*" echo)
+   (cons #rx"^five( )*" five)))
 
 (define (route type ids msg)
 

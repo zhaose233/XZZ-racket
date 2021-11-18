@@ -34,7 +34,8 @@
                 #f)]))
 
   ;;(displayln send-u)
-  (http-sendrecv/url send-u))
+  (http-sendrecv/url send-u)
+  (displayln (format "向~A ~A传送了一条信息：~A" type id msg)))
 
 (provide send-msg)
                 
