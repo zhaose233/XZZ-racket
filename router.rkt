@@ -5,13 +5,15 @@
 (require "plugins/help.rkt")
 (require "plugins/echo.rkt")
 (require "plugins/five.rkt")
+(require "plugins/pic.rkt")
 
 (define command-list
   (list
    (cons #rx"^hello"    hello)
    (cons #rx"^help"     help)
    (cons #rx"^echo( )*" echo)
-   (cons #rx"^five( )*" five)))
+   (cons #rx"^five( )*" five)
+   (cons #rx"^pic"      pic)))
 
 (define (route type ids msg)
 
